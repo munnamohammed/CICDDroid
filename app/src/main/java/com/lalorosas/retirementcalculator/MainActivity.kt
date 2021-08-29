@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         })
 
         calculateButton.setOnClickListener {
+
+
             // Crashes.generateTestCrash()
             try {
                 val interestRate = interestEditText.text.toString().toFloat()
