@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
 
 
             // Crashes.generateTestCrash()
+            
+            
             try {
                 val interestRate = interestEditText.text.toString().toFloat()
                 val currentAge = ageEditText.text.toString().toInt()
