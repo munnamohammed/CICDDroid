@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         calculateButton.setOnClickListener {
 
+            
+            
 
             // Crashes.generateTestCrash()
             
