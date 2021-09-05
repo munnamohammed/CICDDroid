@@ -3,3 +3,4 @@ dev: [![Build status](https://build.appcenter.ms/v0.1/apps/82cc6fa0-0557-4b16-af
 test: [![Build status](https://build.appcenter.ms/v0.1/apps/82cc6fa0-0557-4b16-afed-07fe2b9d0e18/branches/test/badge)](https://appcenter.ms)
 
 master: [![Build status](https://build.appcenter.ms/v0.1/apps/82cc6fa0-0557-4b16-afed-07fe2b9d0e18/branches/master/badge)](https://appcenter.ms)
+
