@@ -20,9 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         val future = Crashes.hasCrashedInLastSession()
         future.thenAccept(AppCenterConsumer {
-            if(it){
-                
-                
+            if(it){  
                 Toast.makeText(this, "Oops! Sorry about that crash!", Toast.LENGTH_LONG).show()
             }
         })
