@@ -16,17 +16,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        AppCenter.start(application, "dad01173-aa9d-43d8-b7ea-df1b7bec99b0", Analytics::class.java, Crashes::class.java)
+        AppCenter.start(application, "26276544-e906-4255-8f3b-c88eb73f4296", Analytics::class.java, Crashes::class.java)
 
         val future = Crashes.hasCrashedInLastSession()
         future.thenAccept(AppCenterConsumer {
             if(it){
+                
+                
                 Toast.makeText(this, "Oops! Sorry about that crash!", Toast.LENGTH_LONG).show()
             }
         })
 
         calculateButton.setOnClickListener {
+
+            
+            
+
             // Crashes.generateTestCrash()
+            
+            
             try {
                 val interestRate = interestEditText.text.toString().toFloat()
                 val currentAge = ageEditText.text.toString().toInt()
@@ -56,6 +64,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+    
+    
 
     fun calculateRetirement(interestRate: Float, currentSavings: Float, monthly: Float, numMonths: Int): Float {
         var futureSavings = currentSavings * (1+(interestRate/100/12)).pow(numMonths)
